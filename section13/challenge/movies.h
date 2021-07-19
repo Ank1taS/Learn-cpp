@@ -6,7 +6,7 @@
 //!  *
 
 
-#ifndef _MOVIES_H
+#ifndef _MOVIES_H_
 
 #include <vector>
 #include "movie.h"

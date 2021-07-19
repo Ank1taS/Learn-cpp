@@ -8,9 +8,9 @@
 //!  * int watched - the number of times you've watched the movie
 
 
-#ifndef _MOVIE_H
+#ifndef _MOVIE_H_
 
-#define _MOVIE_H
+#define _MOVIE_H_
 
 #include <string>
 
