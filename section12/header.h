@@ -1,5 +1,5 @@
-#ifndef HEADER_H
-#define HEADER_H
+#ifndef _HEADER_H_
+#define _HEADER_H_
 #include <iostream>
 
 int* apply_all(int* const &, size_t , int* const &, size_t);
