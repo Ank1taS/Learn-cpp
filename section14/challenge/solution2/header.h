@@ -1,8 +1,8 @@
 //Todo          challenge excercise solution - using overloading operator as non-member function / global function
 //Todo          header.h
 
-#ifndef _HEADER_H
-#define _HEADER_H
+#ifndef _HEADER_H_
+#define _HEADER_H_
 
 #include <iostream>
 
