@@ -36,10 +36,6 @@ class Derrive: public Base {
                                     // x will not be accessible but inheritted
     
 public:
-//     Derrive() {
-//   //      Base::Base();
-//     }
-
     // setter
     void setValue() {
         // x = 100;                    // compiler error
