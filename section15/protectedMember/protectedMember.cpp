@@ -27,7 +27,7 @@ public:
     }
 };
 
-class Derrive: public Base {
+class Derived: public Base {
     // Note friends of Derived have access to only what Derived has access to
 
     // as visibility mode is public, 
@@ -56,16 +56,16 @@ int main() {
     baseObj.z = 70;                 // ok
     baseObj.display();
 
-    std::cout << "=== Base member access from derrive objects ===========" << std::endl;
+    std::cout << "=== Base member access from derived objects ===========" << std::endl;
     
-    Derrive derriveObj;
+    Derived derivedObj;
     
-    derriveObj.display();
-    derriveObj.setValue();
-    // derriveObj.x = 50;             // compiler error as x is private in Derrive
-    // derriveObj.y = 60;             // compiler error as y is protected in Derrive
-    derriveObj.z = 70;                // ok
-    derriveObj.display();
+    derivedObj.display();
+    derivedObj.setValue();
+    // derivedObj.x = 50;             // compiler error as x is private in Derived
+    // derivedObj.y = 60;             // compiler error as y is protected in Derived
+    derivedObj.z = 70;                // ok
+    derivedObj.display();
 
     return 0;
 }

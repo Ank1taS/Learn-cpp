@@ -24,32 +24,32 @@ public:
     }
 };
 
-class Derrive: public Base {
+class Derived: public Base {
     // attribute
-    int derriveValue;
+    int derivedValue;
     
 public:
     // default constructor
-    Derrive(): derriveValue {0} {               // : base(), derriveValue {0}
-        std::cout << "Derrive no-args constructor" << std::endl;
+    Derived(): derivedValue {0} {               // : base(), derivedValue {0}
+        std::cout << "Derived no-args constructor" << std::endl;
     }
 
     // overloaded constructor
-    Derrive(int derriveValue)                   // : base(), derriveValue {derriveValue}
-        : derriveValue {derriveValue} {         
-        std::cout << "Derrive (int) overloaded constructor" << std::endl;
+    Derived(int derivedValue)                   // : base(), derivedValue {derivedValue}
+        : derivedValue {derivedValue} {         
+        std::cout << "Derived (int) overloaded constructor" << std::endl;
     }
 
     // overloaded constructor - 2 parameters
-    Derrive(int baseValue, int derriveValue)
-        : Base(baseValue), derriveValue {derriveValue} {
+    Derived(int baseValue, int derivedValue)
+        : Base(baseValue), derivedValue {derivedValue} {
 
-        std::cout << "Derrive (int, int) overloaded constructor" << std::endl;
+        std::cout << "Derived (int, int) overloaded constructor" << std::endl;
         }
 
     // destructor
-    ~Derrive() {
-        std::cout << "Derrive Destructor." << std::endl;
+    ~Derived() {
+        std::cout << "Derived Destructor." << std::endl;
     }
 
 };
@@ -59,9 +59,9 @@ int main() {
     Base obj1;
     Base obj2{100};
 
-    Derrive obj3;
-    Derrive obj4{1000};
-    Derrive obj5{10, 20};
+    Derived obj3;
+    Derived obj4{1000};
+    Derived obj5{10, 20};
 
     return 0;
 }
