@@ -63,7 +63,7 @@ int main() {
     
     std::cout << "\n === Pointers vector ==== " << std::endl;
     std::vector<Account *> vecAccount {p1, p2, p3, p4};
-    for (auto &acc: vecAccount) {
+    for (auto const &acc: vecAccount) {
         acc->withdraw(2000);
     }
 

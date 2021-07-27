@@ -48,7 +48,7 @@ int main() {
 
     std::cout << "\n========Vector of pointers=========" << std::endl;
     std::vector<Base *> ptrVec {p1, p3, p4, p5, p6, p3, p1};
-    for (auto &ref: ptrVec) {
+    for (auto const &ref: ptrVec) {
         ref->massage();
     }
 
