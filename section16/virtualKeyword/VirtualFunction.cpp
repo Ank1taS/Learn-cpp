@@ -1,6 +1,6 @@
 // Section 16
 // Virtual functions
-// Warrning - due to absence of Virtual destructors in the classes containing virtual function
+// Warrning - Absence of Virtual destructors in the classes containing virtual function causes memory leaks
 
 
 #include <iostream>
