@@ -29,6 +29,8 @@ public:
 // custom deleter
 void myDelete(Test *ptr) {
     std::cout << "Custom deleter for " << ptr->getData() << std::endl;
+    
+    delete ptr;
 }
 
 int main() {
