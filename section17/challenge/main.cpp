@@ -38,7 +38,7 @@ std::unique_ptr<std::vector<std::shared_ptr<Test>>> make() {
 void fill(std::vector<std::shared_ptr<Test>> &vec, int num) {
     int dataValue;       
 
-    for(int i = 0; i < num; ++i) {
+    for(int i {0}; i < num; ++i) {
         std::cout << "Enter data for Test [0] - ";
         std::cin  >> dataValue;
 
